@@ -4,7 +4,7 @@ Preferences are basically lat, lon, travel mode and acceptable travel time from 
 
 # Usage 
 
-Use fynd to create an arrray of preferences and use MAtchingEngine.get_suggestions([]) 
+Use fynd to create an arrray of preferences and use MatchingEngine.get_suggestions([]) 
 to get are recommendation/polygon.
 
 ```
