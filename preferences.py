@@ -3,10 +3,10 @@ class Preferences:
 	
 	def __init__(self, lat, lon, range_value, range_type): 
 		self.primary_preferences = {
-				lat : lat,
-				lon : lon, 
-				range_value : range_value, 
-				range_type : range_type,
+				'lat' : lat,
+				'lon' : lon, 
+				'range_value' : range_value, 
+				'range_type' : range_type,
 				}
 	
 	def __str__(self):
