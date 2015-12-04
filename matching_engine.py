@@ -1,3 +1,4 @@
+from geo_helper import *
 from preferences import *
 from routing_helper import * 
 
@@ -23,7 +24,9 @@ class MatchingEngine :
 
 	def get_intersection_polygon(self, isolines):
 		polygons = self.__get_isoline_polygons(isolines)
-		return polygons[0]
+		geo_helper = GeoHelper()
+		intersecting_polygon = geo_helper.get_polygon_intersection(polygons)
+		return polygons
 
 	def get_suggestions(self, prefs):
 		isolines = self.__get_isolines(prefs)
